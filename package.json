@@ -6,6 +6,7 @@
   "unpkg": "dist/primeval.min.js",
   "module": "dist/primeval.mjs",
   "main": "dist/primeval.js",
+  "types": "primeval.d.ts",
   "license": "MIT",
   "author": {
     "name": "Luke Edwards",
@@ -21,6 +22,7 @@
     "test": "tape test/*.js | tap-spec"
   },
   "files": [
+    "*.d.ts",
     "dist"
   ],
   "keywords": [
