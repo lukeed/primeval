@@ -1,6 +1,6 @@
 {
   "name": "primeval",
-  "version": "0.0.0.",
+  "version": "0.0.0",
   "repository": "lukeed/primeval",
   "description": "WIP",
   "unpkg": "dist/primeval.min.js",
