@@ -25,7 +25,7 @@ test('primes', t => {
 });
 
 test('not primes', t => {
-	[1, 4, 6, 8, 10, 14, 15, 25, 30, 100, 625, 932].forEach(val => {
+	[1, 4, 6, 8, 10, 14, 15, 25, 30, 77, 100, 625, 932].forEach(val => {
 		t.false(fn(val), `(false) ~> ${val}`);
 	});
 	t.end();
