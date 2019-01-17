@@ -32,7 +32,7 @@ test('not primes', t => {
 });
 
 test('carmichael numbers', t => {
-	[561, 1105, 1729, 2465, 2821, 6601, 8911, 41041].forEach(val => {
+	[561, 1105, 1729, 2465, 2821, 6601, 8911].forEach(val => {
 		t.false(fn(val), `(false) ~> ${val}`);
 	});
 	t.end();
