@@ -1,10 +1,20 @@
 # primeval [![Build Status](https://travis-ci.org/lukeed/primeval.svg?branch=master)](https://travis-ci.org/lukeed/primeval)
 
-> A tiny (77B) utility to check if a value is a prime number
+> A tiny (200B) utility to check if a value is a prime number via the AKS Primality test
 
-Makes use of a ***very neat trick*** which proves that squaring any prime number, excluding the "sub primes", is always 1 more than a multiple of 24 🤯 &mdash; [watch the video](https://www.youtube.com/watch?v=ZMkIiFs35HQ)!
+A JavaScript implementation of the [Agrawal–Kayal–Saxena ("AKS") Primality Test](https://en.wikipedia.org/wiki/AKS_primality_test), which is the first primality-proving deterministic algorithm.
 
-> All credit goes to [Matt Parker](http://standupmaths.com/) and [Numberphile](https://www.youtube.com/user/numberphile)
+---
+
+#### WARNING
+
+While AKS is always correct, it's also _incredibly_ slow... ***especially*** for large numbers!
+
+This version of `primeval` is primarily educational &mdash; you should not use this in real applications.<br>That said, to run this, you will need Node 10.8+ or access to a modern browser that includes [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) support.
+
+It's very likely that there will be future, major versions of `primeval` that will depart from AKS and employ faster (but _probablistic_) algorithms; like [Fermat's little theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem), for example.
+
+---
 
 This module exposes three module definitions:
 

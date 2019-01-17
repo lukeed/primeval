@@ -2,7 +2,7 @@
   "name": "primeval",
   "version": "1.0.0",
   "repository": "lukeed/primeval",
-  "description": "A tiny (77B) utility to check if a value is a prime number",
+  "description": "A tiny (200B) utility to check if a value is a prime number via the AKS Primality test",
   "unpkg": "dist/primeval.min.js",
   "module": "dist/primeval.mjs",
   "main": "dist/primeval.js",
@@ -26,6 +26,7 @@
     "dist"
   ],
   "keywords": [
+    "AKS",
     "prime",
     "primality",
     "number"
