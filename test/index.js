@@ -25,14 +25,14 @@ test('primes', t => {
 });
 
 test('not primes', t => {
-	[1, 4, 6, 8, 10, 14, 15, 25, 30, 77, 100, 625, 932].forEach(val => {
+	[-1, 0, 1, 4, 6, 8, 10, 14, 15, 25, 30, 77, 100, 625, 932, 19683].forEach(val => {
 		t.false(fn(val), `(false) ~> ${val}`);
 	});
 	t.end();
 });
 
 test('carmichael numbers', t => {
-	[561, 1105, 1729, 2465, 2821, 6601, 8911].forEach(val => {
+	[561, 1105, 1729, 2465, 2821, 6601, 8911, 41041, 825265, 321197185, 5394826801].forEach(val => {
 		t.false(fn(val), `(false) ~> ${val}`);
 	});
 	t.end();
