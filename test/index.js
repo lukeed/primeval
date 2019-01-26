@@ -25,7 +25,8 @@ test('primes', t => {
 });
 
 test('not primes', t => {
-	[-1, 0, 1, 4, 6, 8, 10, 14, 15, 25, 30, 77, 100, 625, 932, 19683].forEach(val => {
+	const reddit = 6 * 1002861;
+	[-1, 0, 1, 4, 6, 8, 10, 14, 15, 25, 30, 77, 100, 625, 932, 19683, reddit, reddit + 1, reddit - 1].forEach(val => {
 		t.false(fn(val), `(false) ~> ${val}`);
 	});
 	t.end();
