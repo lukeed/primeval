@@ -61,7 +61,7 @@ The number that you want to check.
 
 ## Benchmarks
 
-The `arguiot` case is the code provided in [`PR #2`](https://github.com/lukeed/primeval/pull/2) by [@arguiot](https://github.com/arguiot)
+The `arguiot` case is the code provided in [`PR #2`](https://github.com/lukeed/primeval/pull/2) by [@arguiot](https://github.com/arguiot) :bowing_man:
 
 Purposefully excluding `primeval@2.0.0` as it's incredibly slow and not meant for actual use.
 
