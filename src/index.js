@@ -1,35 +1,25 @@
 export default function (num) {
-	if (num < 2) {
+	if (num < 2 || num * 0 !== 0) {
 		return false;
 	}
 
-	var i=0, j=0, int=1, arr = new Array(100);
+	var i=0, j, sqrt, arr=[2, 3, 5];
 
-	// If coefs will exceed `Number.MAX_SAFE_INTEGER`
-	//   then we need to use `BigInt` values – Node 10.8+
-	if (num >= 57) {
-		int = BigInt(int);
-		num = BigInt(num);
+	for (; i < arr.length; i++) {
+		if (num === arr[i]) return true;
+		if (num % arr[i] === 0) return false;
 	}
 
-	// Coefficients
-	for (arr[0]=int; i < num; i++) {
-		arr[1 + i] = int;
+	arr = [0, 4, 6, 10, 12, 16, 22, 24];
+	sqrt = Math.sqrt(num);
 
-		for (j=i; j > 0; j--) {
-			arr[j] = arr[j - 1] - arr[j];
+	for (i=7; i <= sqrt; i += 30) {
+		for (j=0; j < arr.length; j++) {
+			if (num % (i + arr[j]) === 0) {
+				return false;
+			}
 		}
-
-		arr[0] = -arr[0]; // safe: BigInt & Number
 	}
 
-	arr[0]++;
-	arr[num]--;
-
-	// Return true if all coefficients
-	//   were divisible by the target number.
-	int -= int; //=> 0 or 0n
-	for (i=num; i-- && arr[i] % num === int;);
-
-	return i < 0;
+	return true;
 }
