@@ -9,7 +9,6 @@ test('exports', t => {
 test('non-numbers', t => {
 	t.false(fn(), '(false) ~> undefined');
 	t.false(fn('foo'), '(false) ~> string');
-	t.false(fn(1.234), '(false) ~> float');
 	t.false(fn(null), '(false) ~> null');
 	t.false(fn(NaN), '(false) ~> NaN');
 	t.false(fn(''), '(false) ~> ""');
