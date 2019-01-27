@@ -1,4 +1,4 @@
-// Authored: Arthur Goi (@arguiot)
+// Authored: Arthur Guiot (@arguiot)
 // Refactored: Luke Edwards (@lukeed)
 // @see https://github.com/lukeed/primeval/pull/2#issuecomment-457814536
 
