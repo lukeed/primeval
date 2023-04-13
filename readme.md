@@ -2,7 +2,7 @@
 
 > A tiny (128B) utility to check if a value is a prime number
 
-Based on the "multiples of six" approach – [check this out](http://mathforum.org/library/drmath/view/56068.html) for a quick explanation.
+Based on the "multiples of six" approach – [check this out](https://t5k.org/notes/faq/six.html) for a quick explanation.
 
 As of `3.0.0`, `primeval` is [extremely quick](#benchmarks) and actually usable within application settings.
 
